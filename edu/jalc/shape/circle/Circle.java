@@ -19,6 +19,6 @@ public class Circle extends TwoDimensionalShape{
    }
    
    public String toString(){
-      return "The formula for the perimeter of a circle is the derivitive of the formula of it's area";
+      return "The formula for the perimeter of a circle is the derivative of the formula of it's area";
    }
 }
