@@ -1,4 +1,6 @@
-class RightTriangle extends Triangles{
+package edu.jalc.shape.threeSidedShape;
+
+public class RightTriangle extends ThreeSidedShape{
  
    public RightTriangle(double w, double h, double a, double b, double c){
       super(w, h, a, b, c);
@@ -6,5 +8,9 @@ class RightTriangle extends Triangles{
    
    public double area(){
       return super.area();
+   }
+   
+   public double perimeter(){
+      return super.perimeter();
    }
 }

@@ -1,9 +1,13 @@
-class Rectangles extends TwoDimensionalShape{
+package edu.jalc.shape.fourSidedShape;
+
+import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
+
+class FourSidedShape extends TwoDimensionalShape{
 
    private double w;
    private double l;
 
-   public Rectangles(double w, double l){
+   public FourSidedShape(double w, double l){
       this.w = w;
       this.l = l;
    }
