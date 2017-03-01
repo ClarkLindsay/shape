@@ -13,4 +13,8 @@ public class RightTriangle extends ThreeSidedShape{
    public double perimeter(){
       return super.perimeter();
    }
+   
+   public String toString(){
+      return "A right triangle has one ninty-degree angle and two smaller ones";
+   }
 }

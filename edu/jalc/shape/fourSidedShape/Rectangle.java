@@ -13,4 +13,8 @@ public class Rectangle extends FourSidedShape{
    public double perimeter(){
       return super.perimeter();
    }
+   
+   public String toString(){
+      return "A rectangle is a special case of a parallelogram";
+   }
 }

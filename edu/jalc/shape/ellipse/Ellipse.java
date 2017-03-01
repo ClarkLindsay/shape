@@ -19,4 +19,8 @@ public class Ellipse extends TwoDimensionalShape{
    public double circumference(){
       return 2*Math.PI*Math.sqrt((Math.pow(minorAxis, 2) + Math.pow(majorAxis, 2))/2);
    }
+   
+   public String toString(){
+      return "The sum of the distances between a point on the curve and two fixed points is the same anywhere on an ellipse";
+   }
 }

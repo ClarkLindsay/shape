@@ -23,5 +23,6 @@ class Driver{
       System.out.println(ellipse.circumference());
       Circle circle = new Circle(4);
       System.out.println(circle.circumference());
+      System.out.println(circle.toString());
    }
 }
