@@ -1,5 +1,7 @@
 package edu.jalc.shape.threeSidedShape;
 
+import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
+
 public class RightTriangle extends ThreeSidedShape{
  
    public RightTriangle(double w, double h, double a, double b, double c){
@@ -15,6 +17,10 @@ public class RightTriangle extends ThreeSidedShape{
    }
    
    public String toString(){
-      return "A right triangle has one ninty-degree angle and two smaller ones";
+      return "The area is: " + area() + ". The perimeter is: " + perimeter();
+   }
+   
+    public boolean equals(TwoDimensionalShape b){
+      return super.equals(this, b);
    }
 }

@@ -1,5 +1,7 @@
 package edu.jalc.shape.fourSidedShape;
 
+import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
+
 public class Square extends FourSidedShape{
 
    public Square(double w, double l){
@@ -15,6 +17,10 @@ public class Square extends FourSidedShape{
    }
    
    public String toString(){
-      return "A square is a rectangle with all sides of the same length";
+      return "The area is: " + area() + ". The perimeter is: " + perimeter();
+   }
+   
+   public boolean equals(TwoDimensionalShape b){
+      return super.equals(this, b);
    }
 }
