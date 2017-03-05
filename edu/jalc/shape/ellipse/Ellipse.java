@@ -23,8 +23,4 @@ public class Ellipse extends TwoDimensionalShape{
    public String toString(){
       return "The area of the ellipse is: " + area() + ". The circumference is " + circumference();
    }
-   
-   public boolean equals(TwoDimensionalShape b){
-      return super.equals(this, b);
-   }
 }

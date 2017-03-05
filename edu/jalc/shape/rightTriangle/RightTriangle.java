@@ -24,8 +24,4 @@ public class RightTriangle extends TwoDimensionalShape{
    public String toString(){
       return "The area of the right triangle is: " + area() + ". The perimeter is: " + perimeter();
    }
-   
-   public boolean equals(TwoDimensionalShape b){
-      return super.equals(this, b);
-   }
 }

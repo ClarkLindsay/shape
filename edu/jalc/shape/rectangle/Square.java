@@ -11,8 +11,4 @@ public class Square extends Rectangle{
    public String toString(){
       return "The area of the square is: " + area() + ". The perimeter is " + perimeter();
    }
-   
-   public boolean equals(TwoDimensionalShape b){
-      return super.equals(this, b);
-   }
 }
