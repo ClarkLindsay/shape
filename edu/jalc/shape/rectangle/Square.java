@@ -4,8 +4,8 @@ import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
 
 public final class Square extends Rectangle{
 
-   public Square(double width, double length){
-      super(width, length);
+   public Square(double width){
+      super(width, width);
    }
    
    public String toString(){

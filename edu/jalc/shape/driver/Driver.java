@@ -10,8 +10,8 @@ import edu.jalc.shape.ellipse.Ellipse;
 abstract class Driver{
 
    public static void main(String[] args){
-      Rectangle rectang = new Rectangle(2, 4);
-      Square square = new Square(2, 3.99);
+      Rectangle rectang = new Rectangle(2, 8);
+      Square square = new Square(4);
       RightTriangle rightTriangle = new RightTriangle(2, 8, 4);
       Ellipse ellipse = new Ellipse(2, 4);
       Circle circle = new Circle(4);
@@ -27,5 +27,17 @@ abstract class Driver{
       System.out.println(rightTriangle.equals(square));
       System.out.println(ellipse.equals(circle));
       System.out.println(circle.equals(square));
+       
+      System.out.println(rectang.toCircle());
+      System.out.println(square.toCircle());
+      System.out.println(rightTriangle.toCircle());
+      System.out.println(ellipse.toCircle());
+      System.out.println(circle.toCircle());
+      
+      System.out.println(rectang.toSquare());
+      System.out.println(square.toSquare());
+      System.out.println(rightTriangle.toSquare());
+      System.out.println(ellipse.toSquare());
+      System.out.println(circle.toSquare());
    }
 }
