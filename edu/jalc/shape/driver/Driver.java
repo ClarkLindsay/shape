@@ -20,8 +20,8 @@ class Driver{
       System.out.println(rectang.equals(rectang, rightTriangle));
       Ellipse ellipse = new Ellipse(2, 4);
       System.out.println(ellipse.circumference());
-      Circle circle = new Circle(4);
-      System.out.println(circle.circumference());
+      Circle circle = new Circle(5);
+      System.out.println(circle.area());
       System.out.println(circle.toString());
    }
 }

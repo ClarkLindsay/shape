@@ -1,12 +1,9 @@
 package edu.jalc.shape.twoDimensionalShape;
 
 public abstract class TwoDimensionalShape{
-
-   abstract public double area();
-   abstract public double perimeter();
    
-   public boolean equals(TwoDimensionalShape a, TwoDimensionalShape b){
-      if (a.area() == b.area())
+   public boolean equals(double areaOne, double areaTwo){
+      if (areaOne == areaTwo)
          return true;
       else 
          return false;   

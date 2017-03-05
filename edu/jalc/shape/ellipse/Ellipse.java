@@ -1,22 +1,23 @@
-package edu.jalc.shape.infiniteSidedShape;
+package edu.jalc.shape.ellipse;
 
 import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
 
-public class Ellipse extends InfiniteSidedShape{
+public class Ellipse extends TwoDimensionalShape{
 
    private double minorAxis;
    private double majorAxis;
    
    public Ellipse(double minorAxis, double majorAxis){
-      super(minorAxis, majorAxis);
+      this.minorAxis = minorAxis;
+      this.majorAxis = majorAxis;
    }
    
    public double area(){
-      return super.area();
+      return Math.PI*minorAxis*majorAxis;
    }
    
    public double circumference(){
-      return super.circumference();
+      return 2*Math.PI*Math.sqrt((Math.pow(minorAxis, 2) + Math.pow(majorAxis, 2))/2);
    }
    
    public String toString(){

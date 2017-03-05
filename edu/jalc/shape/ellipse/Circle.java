@@ -1,23 +1,15 @@
-package edu.jalc.shape.infiniteSidedShape;
+package edu.jalc.shape.ellipse;
 
 import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
 
-public class Circle extends InfiniteSidedShape{
+public class Circle extends Ellipse{
 
-   private double r;
+   private double radius;
    
-   public Circle(double r){
-      super(r, r);
+   public Circle(double radius){
+      super(radius, radius);
    }
-   
-   public double area(){
-      return super.area();
-   }
-   
-   public double circumference(){
-      return super.circumference();
-   }
-   
+      
    public String toString(){
       return "The area of the circle is: " + area() + ". The circumference is " + circumference();
    }
