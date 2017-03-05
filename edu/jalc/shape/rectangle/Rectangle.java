@@ -12,11 +12,11 @@ public class Rectangle extends TwoDimensionalShape{
       this.length = length;
    }
 
-   public double area(){
+   public final double area(){
       return width * length;
    }
    
-   public double perimeter(){
+   public final double perimeter(){
       return 2 * (width + length);
    }
       

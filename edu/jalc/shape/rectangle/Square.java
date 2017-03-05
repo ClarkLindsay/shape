@@ -2,7 +2,7 @@ package edu.jalc.shape.rectangle;
 
 import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
 
-public class Square extends Rectangle{
+public final class Square extends Rectangle{
 
    public Square(double width, double length){
       super(width, length);

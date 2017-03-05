@@ -2,12 +2,17 @@ package edu.jalc.shape.ellipse;
 
 import edu.jalc.shape.twoDimensionalShape.TwoDimensionalShape;
 
-public class Circle extends Ellipse{
+public final class Circle extends Ellipse{
 
    private double radius;
    
    public Circle(double radius){
       super(radius, radius);
+      this.radius = radius;
+   }
+   
+   public double circumference(){
+      return 2*Math.PI*radius;
    }
       
    public String toString(){

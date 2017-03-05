@@ -12,7 +12,7 @@ public class Ellipse extends TwoDimensionalShape{
       this.majorAxis = majorAxis;
    }
    
-   public double area(){
+   public final double area(){
       return Math.PI*minorAxis*majorAxis;
    }
    

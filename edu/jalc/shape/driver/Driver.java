@@ -7,21 +7,25 @@ import edu.jalc.shape.rightTriangle.RightTriangle;
 import edu.jalc.shape.ellipse.Circle;
 import edu.jalc.shape.ellipse.Ellipse;
 
-class Driver{
+abstract class Driver{
 
    public static void main(String[] args){
       Rectangle rectang = new Rectangle(2, 4);
-      System.out.println(rectang.area());
       Square square = new Square(2, 3.99);
-      System.out.println(square.area());
-      System.out.println(square.equals(rectang));
       RightTriangle rightTriangle = new RightTriangle(2, 8, 4);
-      System.out.println(rightTriangle.area());
-      System.out.println(rectang.equals(rightTriangle));
       Ellipse ellipse = new Ellipse(2, 4);
-      System.out.println(ellipse.circumference());
-      Circle circle = new Circle(5);
-      System.out.println(circle.area());
+      Circle circle = new Circle(4);
+      
+      System.out.println(rectang.toString());
+      System.out.println(square.toString());
+      System.out.println(rightTriangle.toString());
+      System.out.println(ellipse.toString());
       System.out.println(circle.toString());
+      
+      System.out.println(rectang.equals(rightTriangle));
+      System.out.println(square.equals(rectang));
+      System.out.println(rightTriangle.equals(square));
+      System.out.println(ellipse.equals(circle));
+      System.out.println(circle.equals(square));
    }
 }
