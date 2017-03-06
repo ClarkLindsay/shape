@@ -28,16 +28,14 @@ abstract class Driver{
       System.out.println(ellipse.equals(circle));
       System.out.println(circle.equals(square));
        
-      System.out.println(rectang.toCircle());
-      System.out.println(square.toCircle());
-      System.out.println(rightTriangle.toCircle());
-      System.out.println(ellipse.toCircle());
-      System.out.println(circle.toCircle());
+      System.out.println(circle.toCircle(rectang));
+      System.out.println(circle.toCircle(square));
+      System.out.println(circle.toCircle(rightTriangle));
+      System.out.println(circle.toCircle(ellipse));
       
-      System.out.println(rectang.toSquare());
-      System.out.println(square.toSquare());
-      System.out.println(rightTriangle.toSquare());
-      System.out.println(ellipse.toSquare());
-      System.out.println(circle.toSquare());
+      System.out.println(square.toSquare(rectang));
+      System.out.println(square.toSquare(rightTriangle));
+      System.out.println(square.toSquare(ellipse));
+      System.out.println(square.toSquare(circle));
    }
 }

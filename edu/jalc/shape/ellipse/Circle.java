@@ -17,5 +17,10 @@ public final class Circle extends Ellipse{
       
    public String toString(){
       return "The area of the circle is: " + area() + ". The circumference is " + circumference();
-   }  
+   }
+   
+   public final Circle toCircle(TwoDimensionalShape other){
+      double radius = Math.sqrt(other.area()/Math.PI);
+      return new Circle(radius);
+   }   
 }
